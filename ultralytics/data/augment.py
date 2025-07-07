@@ -1865,8 +1865,8 @@ class Albumentations:
             T = [
                 A.Blur(p=0.01),
                 A.MedianBlur(p=0.01),
-                #A.ToGray(p=0.01),
-                #A.CLAHE(p=0.01),
+                A.ToGray(p=0.01),#need to delete
+                A.CLAHE(p=0.01),#delete
                 A.RandomBrightnessContrast(p=0.0),
                 A.RandomGamma(p=0.0),
                 A.ImageCompression(quality_lower=75, p=0.0),
